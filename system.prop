@@ -168,6 +168,8 @@ vendor.perf.iop_v3.enable=true
 vendor.perf.gestureflingboost.enable=true
 #Property to enable WorkloadClassifier
 vendor.perf.workloadclassifier.enable=true
+#Property to enable perf activity hints
+ro.vendor.at_library=libqti-at.so
 
 #Expose aux camera for below packages
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.qualcomm.saltproject2
