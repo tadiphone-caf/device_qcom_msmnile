@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
-Copyright (c) 2015-2017, The Linux Foundation. All rights reserved.
+Copyright (c) 2015-2019, The Linux Foundation. All rights reserved.
 
 Not a Contribution.
 
@@ -35,11 +35,11 @@ limitations under the License.
             <Limit name="measured-frame-rate-3840x2160" range="37-40" />
         </MediaCodec>
         <MediaCodec name="OMX.qcom.video.encoder.h263sw" type="video/3gpp" update="true">
-            <Limit name="measured-frame-rate-176x144" range="303-303" />
+            <Limit name="measured-frame-rate-176x144" range="50-117" />
             <Limit name="measured-frame-rate-352x288" range="92-109" />
         </MediaCodec>
         <MediaCodec name="OMX.qcom.video.encoder.mpeg4sw" type="video/mp4v-es" update="true">
-            <Limit name="measured-frame-rate-176x144" range="299-299" />
+            <Limit name="measured-frame-rate-176x144" range="50-100" />
             <Limit name="measured-frame-rate-352x288" range="113-245" />
             <Limit name="measured-frame-rate-640x480" range="80-148" />
             <Limit name="measured-frame-rate-1280x720" range="30-60" />
