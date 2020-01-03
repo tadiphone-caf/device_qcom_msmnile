@@ -784,7 +784,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>qti-default</instance>
             <instance>qti-dsp</instance>
             <instance>qti-gpu</instance>
-            <instance>qti-hta</instance>
         </interface>
     </hal>
     <!-- SCVE Panorama hal services -->
