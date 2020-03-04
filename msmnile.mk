@@ -390,6 +390,11 @@ ifneq ($(GENERIC_ODM_IMAGE),true)
 else
     PRODUCT_COPY_FILES += device/qcom/msmnile/manifest-generic.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest.xml
 endif
+
+# Target specific Netflix custom property
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.netflix.bsp_rev=Q855-16947-1
+
 ###################################################################################
 # This is the End of target.mk file.
 # Now, Pickup other split product.mk files:
