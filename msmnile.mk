@@ -1,3 +1,6 @@
+# Import prebuilt blobs
+$(call inherit-product, vendor/qcom/msmnile/msmnile-vendor.mk)
+
 #####Dynamic partition Handling
 ####
 #### Turning BOARD_DYNAMIC_PARTITION_ENABLE flag to TRUE will enable dynamic partition/super image creation.
