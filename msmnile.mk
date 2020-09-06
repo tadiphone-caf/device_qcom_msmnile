@@ -1,3 +1,6 @@
+# Import prebuilt blobs
+$(call inherit-product, vendor/qcom/msmnile/msmnile-vendor.mk)
+
 # Enable AVB 2.0
 BOARD_AVB_ENABLE := true
 
