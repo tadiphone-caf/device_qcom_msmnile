@@ -406,3 +406,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 $(call inherit-product-if-exists, vendor/qcom/defs/product-defs/system/*.mk)
 $(call inherit-product-if-exists, vendor/qcom/defs/product-defs/vendor/*.mk)
 ###################################################################################
+
+# Nubia stuff
+PRODUCT_PACKAGES += init.nubia.rc
