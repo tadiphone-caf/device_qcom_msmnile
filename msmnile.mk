@@ -351,3 +351,6 @@ $(call inherit-product, build/make/target/product/product_launched_with_p.mk)
 #Thermal
 PRODUCT_PACKAGES += android.hardware.thermal@1.0-impl \
                     android.hardware.thermal@1.0-service
+
+# Nubia stuff
+PRODUCT_PACKAGES += init.nubia.rc

@@ -1,0 +1,101 @@
+# combined from stock
+
+on post-fs-data
+    chmod 0777 /persist/sensors
+
+    # proximity
+    chown system system /sys/class/proximity/proximity/enable
+    chown system system /sys/class/proximity/proximity/prox_value
+    chown system system /sys/class/proximity/proximity/prox_init
+    chown system system /sys/class/proximity/proximity/chip_name
+    chown system system /sys/class/proximity/proximity/proximity_fb
+    chown system system /sys/class/proximity/proximity/prox_thres_check
+    chown system system /sys/class/proximity/proximity/prox_thres_to_persist
+
+    chmod 0664 /sys/class/proximity/proximity/enable
+    chmod 0664 /sys/class/proximity/proximity/prox_value
+    chmod 0664 /sys/class/proximity/proximity/prox_init
+    chmod 0664 /sys/class/proximity/proximity/chip_name
+    chmod 0666 /sys/class/proximity/proximity/proximity_fb
+
+    chown system system /persist/sensors/als_cal_data
+    chmod 0664 /persist/sensors/als_cal_data
+
+    chown system system /persist/sensors/xtalk_cal
+    chmod 0664 /persist/sensors/xtalk_cal
+
+    # light
+    chown system system /sys/class/light/light/enable
+    chown system system /sys/class/light/light/tp_cfg
+    chown system system /sys/class/light/light/fac_calibrate
+    chown system system /sys/class/light/light/calibrate
+    chown system system /sys/class/light/light/chip_name
+    chown system system /sys/class/light/light/light_value
+    chown system system /sys/class/light/light/delay
+    chown system system /sys/class/light/light/red_data
+    chown system system /sys/class/light/light/green_data
+    chown system system /sys/class/light/light/blue_data
+    chown system system /sys/class/light/light/clear_data
+    chown system system /sys/class/light/light/dump_reg
+    chown system system /sys/class/light/light/module_tpcolor
+    chown system system /sys/class/light/light/dump_tp_parameter
+    chown system system /sys/class/light/light/dev_init
+
+    chmod 0644 /sys/class/light/light/enable
+    chmod 0644 /sys/class/light/light/tp_cfg
+    chmod 0644 /sys/class/light/light/fac_calibrate
+    chmod 0644 /sys/class/light/light/calibrate
+    chmod 0644 /sys/class/light/light/chip_name
+    chmod 0644 /sys/class/light/light/light_value
+    chmod 0644 /sys/class/light/light/delay
+    chmod 0644 /sys/class/light/light/red_data
+    chmod 0644 /sys/class/light/light/blue_data
+    chmod 0644 /sys/class/light/light/green_data
+    chmod 0644 /sys/class/light/light/clear_data
+    chmod 0644 /sys/class/light/light/dump_reg
+    chmod 0644 /sys/class/light/light/module_tpcolor
+    chmod 0644 /sys/class/light/light/dump_tp_parameter
+    chown 0644 /sys/class/light/light/dev_init
+    chown system system /persist/sensors/rgb_color_cfg
+    chmod 0664 /persist/sensors/rgb_color_cfg
+    chown system system /persist/sensors/rgbc_cfg
+    chmod 0664 /persist/sensors/rgbc_cfg
+    
+    # fingerprint (sunwave)
+    chown system system /dev/sunwave_fp
+    chmod 0664 /dev/sunwave_fp
+
+    setprop ro.hardware.fingerprint sunwave
+
+    # leds
+    chown system system /sys/class/leds/green/breath
+    chown system system /sys/class/leds/green/brightness
+    chown system system /sys/class/leds/green/delay_off
+    chown system system /sys/class/leds/green/delay_on
+    chown system system /sys/class/leds/green/max_brightness
+    chown system system /sys/class/leds/green/trigger
+    chown system system /sys/class/leds/green/breath_feature
+
+    chmod 0664 /sys/class/leds/green/breath
+    chmod 0664 /sys/class/leds/green/brightness
+    chmod 0664 /sys/class/leds/green/delay_off
+    chmod 0664 /sys/class/leds/green/delay_on
+    chmod 0664 /sys/class/leds/green/max_brightness
+    chmod 0664 /sys/class/leds/green/trigger
+    chmod 0664 /sys/class/leds/green/breath_feature
+
+    chown system system /sys/class/leds/red/breath
+    chown system system /sys/class/leds/red/brightness
+    chown system system /sys/class/leds/red/delay_off
+    chown system system /sys/class/leds/red/delay_on
+    chown system system /sys/class/leds/red/max_brightness
+    chown system system /sys/class/leds/red/trigger
+    chown system system /sys/class/leds/red/breath_feature
+
+    chmod 0664 /sys/class/leds/red/breath
+    chmod 0664 /sys/class/leds/red/brightness
+    chmod 0664 /sys/class/leds/red/delay_off
+    chmod 0664 /sys/class/leds/red/delay_on
+    chmod 0664 /sys/class/leds/red/max_brightness
+    chmod 0664 /sys/class/leds/red/trigger
+    chmod 0664 /sys/class/leds/red/breath_feature
