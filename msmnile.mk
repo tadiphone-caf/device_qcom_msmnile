@@ -356,3 +356,5 @@ PRODUCT_PACKAGES += android.hardware.thermal@1.0-impl \
 
 # Nubia stuff
 PRODUCT_PACKAGES += init.nubia.rc
+
+PRODUCT_PACKAGES += android.hardware.biometrics.fingerprint@2.1-service
