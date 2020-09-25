@@ -84,3 +84,12 @@ vendor/lib64/libswregistrationalgo.so
 
 # Fingerprint
 vendor/lib64/hw/fingerprint.sunwave.so
+
+# Sensors
+vendor/etc/sensors/hals.conf
+vendor/etc/sensors/config/lsm6ds3c_0.json
+vendor/etc/sensors/config/lsm6ds3c_0_8g.json
+vendor/etc/sensors/config/msmnile_lsm6ds3c_0.json
+vendor/etc/sensors/config/msmnile_lsm6dsm_0.json
+vendor/etc/sensors/config/msmnile_qrd_lsm6ds3c_0.json
+vendor/lib64/sensors.oem.so
