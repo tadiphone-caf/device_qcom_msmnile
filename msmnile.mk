@@ -385,3 +385,6 @@ $(call inherit-product-if-exists, vendor/qcom/defs/product-defs/vendor/*.mk)
 
 # Nubia stuff
 PRODUCT_PACKAGES += init.nubia.rc
+
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v28/arm64/arch-arm64-armv8-a/shared/vndk-sp/libc++.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcXD.so
