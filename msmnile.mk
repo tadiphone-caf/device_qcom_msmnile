@@ -7,7 +7,7 @@ $(call inherit-product, vendor/qcom/msmnile/msmnile-vendor.mk)
 
 ifeq ($(TARGET_FWK_SUPPORTS_FULL_VALUEADDS),true)
   # By default this target is new-launch config, so set the default shipping level to 29 (if not set explictly earlier)
-  SHIPPING_API_LEVEL ?= 29
+  SHIPPING_API_LEVEL ?= 28
 
   # Enable Dynamic partitions only for Q new launch devices.
   ifeq ($(SHIPPING_API_LEVEL),29)
@@ -44,11 +44,11 @@ endif
 # For QSSI builds, we skip building the system image (when value adds are enabled).
 # Instead we build the "non-system" images (that we support).
 
-ifeq ($(TARGET_FWK_SUPPORTS_FULL_VALUEADDS),true)
-PRODUCT_BUILD_SYSTEM_IMAGE := false
-else
+#ifeq ($(TARGET_FWK_SUPPORTS_FULL_VALUEADDS),true)
+#PRODUCT_BUILD_SYSTEM_IMAGE := false
+#else
 PRODUCT_BUILD_SYSTEM_IMAGE := true
-endif
+#endif
 PRODUCT_BUILD_SYSTEM_OTHER_IMAGE := false
 PRODUCT_BUILD_VENDOR_IMAGE := true
 PRODUCT_BUILD_PRODUCT_IMAGE := false
@@ -240,30 +240,6 @@ AUDIO_DLKM += audio_wcd934x.ko
 PRODUCT_PACKAGES += $(AUDIO_DLKM)
 
 PRODUCT_PACKAGES += fs_config_files
-
-#A/B related packages
-PRODUCT_PACKAGES += update_engine \
-    update_engine_client \
-    update_verifier \
-    bootctrl.msmnile \
-    android.hardware.boot@1.0-impl \
-    android.hardware.boot@1.0-service
-
-PRODUCT_HOST_PACKAGES += \
-    brillo_update_payload \
-    configstore_xmlparser
-
-#Boot control HAL test app
-PRODUCT_PACKAGES_DEBUG += bootctl
-
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-  bootctrl.msmnile \
-  librecovery_updater_msm \
-  libz \
-  libcutils
-
-PRODUCT_PACKAGES += \
-  update_engine_sideload
 
 #Healthd packages
 PRODUCT_PACKAGES += \
