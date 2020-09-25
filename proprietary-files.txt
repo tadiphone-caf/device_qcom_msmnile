@@ -1,0 +1,2 @@
+# Fingerprint
+vendor/lib64/hw/fingerprint.sunwave.so

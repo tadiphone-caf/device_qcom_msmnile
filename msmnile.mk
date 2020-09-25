@@ -355,3 +355,6 @@ $(call inherit-product-if-exists, vendor/qcom/defs/product-defs/vendor/*.mk)
 
 # Nubia stuff
 PRODUCT_PACKAGES += init.nubia.rc
+
+# Fingerprint
+PRODUCT_PACKAGES += android.hardware.biometrics.fingerprint@2.1-service
