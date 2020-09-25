@@ -81,3 +81,6 @@ vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/libmmcamera_faceproc.so
 vendor/lib64/libmmcamera_faceproc2.so
 vendor/lib64/libswregistrationalgo.so
+
+# Fingerprint
+vendor/lib64/hw/fingerprint.sunwave.so
