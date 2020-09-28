@@ -358,3 +358,7 @@ PRODUCT_PACKAGES += init.nubia.rc
 
 # Fingerprint
 PRODUCT_PACKAGES += android.hardware.biometrics.fingerprint@2.1-service
+
+PRODUCT_PACKAGES += \
+     vendor.qti.hardware.vpp@1.2.vendor \
+     vendor.qti.hardware.vpp@1.3.vendor
