@@ -85,6 +85,12 @@ vendor/lib64/libswregistrationalgo.so
 # Fingerprint
 vendor/lib64/hw/fingerprint.sunwave.so
 
+# Widevine - from coral-user 10 QQ3A.200805.001 6578210 release-keys
+vendor/bin/hw/android.hardware.drm@1.2-service.widevine|706a475ee3e06758bea869317cfad12426792111
+vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|e3cb732c0bd519988100675edf385d947abf5f6c
+vendor/lib/libwvhidl.so|2bea7da658370dbbe56a6d42f860e650c41f8cdd
+vendor/lib64/libwvhidl.so|7de640115f1c9617da5eab3a2cf7d17ea52ca7b4
+
 # Sensors
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/config/ak991x_dri_0.json
