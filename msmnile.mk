@@ -390,3 +390,7 @@ PRODUCT_COPY_FILES += \
     prebuilts/vndk/v28/arm64/arch-arm64-armv8-a/shared/vndk-sp/libc++.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcXD.so
 
 PRODUCT_PACKAGES += android.hardware.biometrics.fingerprint@2.1-service
+
+PRODUCT_PACKAGES += \
+     vendor.qti.hardware.vpp@1.2.vendor \
+     vendor.qti.hardware.vpp@1.3.vendor
