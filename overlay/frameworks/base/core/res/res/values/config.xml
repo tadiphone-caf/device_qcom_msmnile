@@ -37,4 +37,6 @@
        <item>"wifi_br0"</item>
    </string-array>
 
+   <!-- Specify if the fingerprint hardware support gestures-->
+   <bool name="config_fingerprintSupportsGestures">true</bool>
 </resources>
