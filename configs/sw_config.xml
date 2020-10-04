@@ -7,7 +7,7 @@
 	<navigation>
 		<mode cname="导航方向模式选择" default="3" desc="导航方向模式选择。默认：SF_NAV_MODE_AUTO" format="array" options="SF_NAV_MODE_ALL|SF_NAV_MODE_LMR|SF_NAV_MODE_UMD|SF_NAV_MODE_AUTO" useable="true" values="0|1|2|3">3</mode>
 		<direct cname="导航方向映射" default="UDLR" desc="导航方向映射。默认：UDLR" format="string" useable="true">RLUD</direct>
-		<longkey_en cname="导航长按开关" default="true" desc="默认：true" format="boolean" useable="true">false</longkey_en>
+		<longkey_en cname="导航长按开关" default="true" desc="默认：true" format="boolean" useable="true">true</longkey_en>
 		<frm_num_min cname="导航最小采集帧数" default="5" desc="导航最小采集帧数[3,10]。默认: 5" format="integer" max="10" min="3" useable="true">5</frm_num_min>
 		<frm_num_max cname="导航最大采集帧数" default="100" desc="导航最大采集帧数[5,200]。默认: 100" format="integer" max="200" min="5" useable="true">100</frm_num_max>
 		<thresh_x cname="导航x方向灵敏度" default="18" desc="导航x方向灵敏度[10,30]。默认: 18" format="integer" max="30" min="10" useable="true">18</thresh_x>
