@@ -13,7 +13,7 @@ vendor/lib64/camera/com.qti.sensor.max7366_6dof.so
 vendor/lib64/camera/com.qti.sensor.max7366_eyetrack.so
 vendor/lib64/camera/com.qti.sensor.max7366_ov6211.so
 vendor/lib64/camera/com.qti.sensor.max7366_ov9282.so
-vendor/lib64/camera/com.qti.sensor.nx629j_imx586.so:vendor/lib64/camera/com.qti.sensor.tp1803_imx586.so
+vendor/lib64/camera/com.qti.sensor.nx629j_imx586.so:vendor/lib64/camera/com.qti.sensor.tp1803_imx586.so|67c6b10ee4a69ef3dce714d16366fb533c8ddf07
 vendor/lib64/camera/com.qti.sensor.ov12a10.so
 vendor/lib64/camera/com.qti.sensor.ov12a10_front.so
 vendor/lib64/camera/com.qti.sensor.ov13855.so
