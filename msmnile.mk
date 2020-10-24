@@ -6,7 +6,7 @@ $(call inherit-product, vendor/qcom/msmnile/msmnile-vendor.mk)
 #### Turning BOARD_DYNAMIC_PARTITION_ENABLE flag to TRUE will enable dynamic partition/super image creation.
 
 # By default this target is new-launch config, so set the default shipping level to 29 (if not set explictly earlier)
-SHIPPING_API_LEVEL := 30
+SHIPPING_API_LEVEL := 28
 
 # Enable Dynamic partitions only for Q new launch devices.
 ifeq (true,$(call math_gt_or_eq,$(SHIPPING_API_LEVEL),29))
@@ -39,16 +39,6 @@ endif
 
 #####Dynamic partition Handling
 
-# Default A/B configuration.
-ENABLE_AB ?= true
-
-# Enable virtual-ab by default
-ENABLE_VIRTUAL_AB := true
-
-ifeq ($(ENABLE_VIRTUAL_AB), true)
-    $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
-endif
-
 # For QSSI builds, we skip building the system image (when value adds are enabled).
 # Instead we build the "non-system" images (that we support).
 
@@ -57,7 +47,7 @@ PRODUCT_BUILD_SYSTEM_OTHER_IMAGE := false
 PRODUCT_BUILD_VENDOR_IMAGE := true
 PRODUCT_BUILD_PRODUCT_IMAGE := false
 PRODUCT_BUILD_SYSTEM_EXT_IMAGE := false
-PRODUCT_BUILD_ODM_IMAGE := true
+PRODUCT_BUILD_ODM_IMAGE := false
 PRODUCT_BUILD_CACHE_IMAGE := false
 PRODUCT_BUILD_RAMDISK_IMAGE := true
 PRODUCT_BUILD_USERDATA_IMAGE := true
@@ -240,24 +230,6 @@ AUDIO_DLKM += audio_wcd934x.ko
 PRODUCT_PACKAGES += $(AUDIO_DLKM)
 
 PRODUCT_PACKAGES += fs_config_files
-
-#A/B related packages
-PRODUCT_PACKAGES += update_engine \
-    update_engine_client \
-    update_verifier \
-    android.hardware.boot@1.1-impl-qti \
-    android.hardware.boot@1.1-impl-qti.recovery \
-    android.hardware.boot@1.1-service
-
-PRODUCT_HOST_PACKAGES += \
-    brillo_update_payload \
-    configstore_xmlparser
-
-#Boot control HAL test app
-PRODUCT_PACKAGES_DEBUG += bootctl
-
-PRODUCT_PACKAGES += \
-  update_engine_sideload
 
 #Healthd packages
 PRODUCT_PACKAGES += \
