@@ -137,4 +137,4 @@ vendor/etc/sensors/config/sns_tilt_sw_disabled.json
 vendor/etc/sensors/config/sns_tilt_sw_enabled.json
 vendor/etc/sensors/config/sns_tilt_to_wake.json
 vendor/etc/sensors/config/sns_wrist_pedo.json
-vendor/lib64/sensors.oem.so
+vendor/lib64/sensors.oem.so|ce965b23ba2c1afe1bf5fbaf8073112d2276c7b8

@@ -3,6 +3,12 @@
 on post-fs-data
     chmod 0777 /persist/sensors
 
+    # sensors' input devices
+    chmod 0666 /dev/input/event4
+    chown system system /dev/input/event4
+    chmod 0666 /dev/input/event5
+    chown system system /dev/input/event5
+
     # proximity
     chown system system /sys/class/proximity/proximity/enable
     chown system system /sys/class/proximity/proximity/prox_value
