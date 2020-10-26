@@ -70,7 +70,7 @@ vendor/lib64/camera/fdconfigpreview.bin|57a107b602bfbe3a8b571fdcaa6eb8cb217b7144
 vendor/lib64/camera/fdconfigpreviewlite.bin|57a107b602bfbe3a8b571fdcaa6eb8cb217b7144
 vendor/lib64/camera/fdconfigvideo.bin|57a107b602bfbe3a8b571fdcaa6eb8cb217b7144
 vendor/lib64/camera/fdconfigvideolite.bin|57a107b602bfbe3a8b571fdcaa6eb8cb217b7144
-vendor/lib64/hw/camera.qcom.so|88d557c1ae66ecbc224c5bd2a9aee0544a177010|d459295098a99421d782685f623b1efd677f2afe
+vendor/lib64/hw/camera.qcom.so|d459295098a99421d782685f623b1efd677f2afe|cd6f4170c3822d6650cec9476dc55c0ba473d941
 vendor/lib64/hw/com.qti.chi.override.so|f0068b2814f689d74a70a2542b94f312efb0f66b
 vendor/lib64/libcamera_nn_stub.so|ba354b7e968ce2af3ac5597292d1b315d89b4113
 vendor/lib64/libcamxfdalgov7.so|aa3cf08b7c8fa862417d332c2b8012218188b962
@@ -83,6 +83,9 @@ vendor/lib64/libcom.qti.chinodeutils.so|1d694e69edee256715d96b4d0aa3d883ee4cf7b4
 vendor/lib64/libmmcamera_faceproc.so|cbe8a0f4cee065f96652b143f22baf9d047998da
 vendor/lib64/libmmcamera_faceproc2.so|1196dd8def4e711b71dc863f7f189e69d163f948
 vendor/lib64/libswregistrationalgo.so|555762868791b8c731170578fef02468ac709805
+
+# Camera - hax
+vendor/lib64/libsnsapj.so|0771132480f819456b66bd2d10118409396f436d
 
 # Fingerprint
 vendor/lib64/hw/fingerprint.sunwave.so
