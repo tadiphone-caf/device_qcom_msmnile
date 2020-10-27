@@ -1,3 +1,8 @@
+# aptX - vendor - coral-user 11 RP1A.201005.004 6782484 release-keys
+vendor/etc/acdbdata/adsp_avs_config.acdb|2b1d37be4e69445802b1a3165e7a23de5b6c93c8
+vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so|59cbdf5d84ba2ff64014941f3ad9e6c2c35e2c06
+vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so|e25f1087edc95d2ff76c1e37787ca37aae2cf175
+
 # Camera - device
 vendor/lib64/camera/com.qti.eeprom.truly_cmb433.so
 vendor/lib64/camera/com.qti.sensor.imx318.so
