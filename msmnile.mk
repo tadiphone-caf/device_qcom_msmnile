@@ -375,3 +375,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat \
     libprotobuf-cpp-lite-vendorcompat
+
+# Configstore
+PRODUCT_PACKAGES += \
+    disable_configstore
