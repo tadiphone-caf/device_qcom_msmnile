@@ -367,3 +367,7 @@ PRODUCT_COPY_FILES += \
     device/qcom/msmnile/configs/sw_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sw_config.xml \
     device/qcom/msmnile/configs/sf-keys.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/sf-keys.idc \
     device/qcom/msmnile/configs/sf-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/sf-keys.kl
+
+# Configstore
+PRODUCT_PACKAGES += \
+    disable_configstore
