@@ -1,4 +1,4 @@
-/dev/sunwave_fp    u:object_r:fingerprint_device:s0
+/dev/sunwave_fp    u:object_r:vendor_fingerprint_device:s0
 
-/sys/devices/virtual/proximity/proximity(/.*)?		u:object_r:sysfs_sensors:s0
-/sys/devices/virtual/light/light(/.*)?		        u:object_r:sysfs_sensors:s0
+/sys/devices/virtual/proximity/proximity(/.*)?		u:object_r:vendor_sysfs_sensors:s0
+/sys/devices/virtual/light/light(/.*)?		        u:object_r:vendor_sysfs_sensors:s0
