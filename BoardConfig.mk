@@ -274,3 +274,10 @@ Q_BU_DISABLE_MODULE := true
 #################################################################################
 
 include device/qcom/sepolicy_vndr/SEPolicy.mk
+
+# Make sure custom sepolicy is only included once
+ifneq ($(CUSTOM_POLICY_INCLUDED),true)
+BOARD_SEPOLICY_DIRS += \
+    device/qcom/msmnile/sepolicy/vendor
+CUSTOM_POLICY_INCLUDED := true
+endif
