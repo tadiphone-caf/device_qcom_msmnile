@@ -29,7 +29,7 @@ vendor/lib64/camera/com.qti.sensor.s5k2l7.so
 vendor/lib64/camera/com.qti.sensor.s5k2x5sp.so
 vendor/lib64/camera/com.qti.sensor.s5k5e9yu05.so
 vendor/lib64/camera/com.qti.sensor.tp1803_ov8856.so
-vendor/lib64/camera/com.qti.sensormodule.tp1803_imx586.bin
+vendor/lib64/camera/com.qti.sensormodule.tp1803_imx586.bin|6622351aae049a184a7f33815ab4749a8c889d81
 vendor/lib64/camera/com.qti.sensormodule.tp1803_ov8856.bin
 vendor/lib64/camera/com.qti.tuned.default.bin
 vendor/lib64/camera/com.qti.tuned.tp1803_imx586.bin
