@@ -375,3 +375,7 @@ PRODUCT_COPY_FILES += \
 # Configstore
 PRODUCT_PACKAGES += \
     disable_configstore
+
+# Custom power
+PRODUCT_PACKAGES += \
+    init.power.msmnile.rc
