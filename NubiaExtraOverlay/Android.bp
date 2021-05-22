@@ -1,0 +1,5 @@
+runtime_resource_overlay {
+    name: "NubiaExtraOverlay",
+    vendor: true,
+    sdk_version: "current",
+}

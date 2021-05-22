@@ -391,3 +391,7 @@ PRODUCT_PACKAGES += com.android.vndk.current.on_vendor
 PRODUCT_VENDOR_PROPERTIES += \
     ro.soc.manufacturer=Qualcomm \
     ro.soc.model=SDM8150 \
+
+# Extra overlay
+PRODUCT_PACKAGES += \
+    NubiaExtraOverlay
