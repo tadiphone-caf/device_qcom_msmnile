@@ -383,3 +383,6 @@ PRODUCT_PACKAGES += \
 # SSR
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.ssr.restart_level=ALL_ENABLE
+
+# VNDK on vendor
+PRODUCT_PACKAGES += com.android.vndk.current.on_vendor
