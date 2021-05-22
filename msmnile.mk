@@ -386,3 +386,8 @@ PRODUCT_VENDOR_PROPERTIES += \
 
 # VNDK on vendor
 PRODUCT_PACKAGES += com.android.vndk.current.on_vendor
+
+# SOC Properties - for S
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.soc.manufacturer=Qualcomm \
+    ro.soc.model=SDM8150 \
