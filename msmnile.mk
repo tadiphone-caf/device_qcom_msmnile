@@ -381,5 +381,5 @@ PRODUCT_PACKAGES += \
     init.power.msmnile.rc
 
 # SSR
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.ssr.restart_level=ALL_ENABLE
